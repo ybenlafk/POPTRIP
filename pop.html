@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopTrip</title>
+    <link rel="shortcut icon" href="img/airplane.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/pop.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/pop1.css">
+    <link rel="stylesheet" href="css/pop2.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css" />
+</head>
+<body>
+    
+<!--==================== Navbar ====================-->
+        
+        <nav class="navbarr" id="navbarr">
+            <div class="inner-width">
+                <h1 class="logo">POPTRIP</h1>
+                <button class="menu-toggler" id="mg">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="Navigation" >
+                    <a class="Menu" href="#home">Home</a>
+                    <a class="Menu" href="#explore">Explore</a>
+                    <a class="Menu" href="#places">Places</a>
+                    <a class="Menu" href="#Contact" style="cursor: pointer;">Contact</a>
+                    <a  onclick="Login()"><button class="btnC">Login</button></a>
+                </div>
+            </div>
+        </nav>
+<!--==================== Main ====================-->
+    <section class="main" id="home">
+            <div>
+                <h2>Let’s Make <br>Your Best <br>Trip Ever <br> <span>The best travel for your joueney <br>respectful of the enveroment</span></h2>
+                <a href="#vd" ><button id="btn"> Discover </button></a>
+            </div>
+    </section>
+<!--==================== products ====================-->
+
+    <section class="product" id="explore"> 
+        <h1 class="titel">Popular Destinations <br> <span>From historical cities to natural splondours, come see the best <br>of world! </span></h1>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"><i class="fas fa-map-marker-alt" id="loc"></i></span>
+                    <img src="img/img1.jpg" class="product-thumb" alt="">
+                    <button  class="card-btn" onclick="msg()">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Sahara Desert</h2>
+                    <p class="product-short-description">Merzouga, Maroc.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"><i class="fas fa-map-marker-alt" id="loc"></i></span>
+                    <img src="img/img2.jpg" class="product-thumb" alt="">
+                    <button class="card-btn" onclick="msg()">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Jamae lefna</h2>
+                    <p class="product-short-description">Merrakech, Maroc.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"><i class="fas fa-map-marker-alt" id="loc"></i></span>
+                    <img src="img/img3.jpg" class="product-thumb" alt="">
+                    <button class="card-btn" onclick="msg()">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Old Home</h2>
+                    <p class="product-short-description">Ouarzazat, Maroc.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"><i class="fas fa-map-marker-alt" id="loc"></i></span>
+                    <img src="img/img4.jpg" class="product-thumb" alt="">
+                    <button class="card-btn" onclick="msg()">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Ocean</h2>
+                    <p class="product-short-description">Tanger, Maroc.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"><i class="fas fa-map-marker-alt" id="loc"></i></span>
+                    <img src="img/img5.jpg" class="product-thumb" alt="">
+                    <button class="card-btn" onclick="msg()">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">District</h2>
+                    <p class="product-short-description">Chefchaouen, Maroc.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"><i class="fas fa-map-marker-alt" id="loc"></i></span>
+                    <img src="img/img6 (2).jpg" class="product-thumb" alt="">
+                    <button class="card-btn" onclick="msg()">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Lake</h2>
+                    <p class="product-short-description">Al Hoceïma, Maroc.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"><i class="fas fa-map-marker-alt" id="loc"></i></span>
+                    <img src="img/img7.jpg" class="product-thumb" alt="">
+                    <button class="card-btn" onclick="msg()">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Anchor</h2>
+                    <p class="product-short-description">Essaouira, Maroc.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"><i class="fas fa-map-marker-alt" id="loc"></i></span>
+                    <img src="img/img8.jpg" class="product-thumb" alt="">
+                    <button class="card-btn" onclick="msg()">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Mountains</h2>
+                    <p class="product-short-description">Casablanca, Maroc.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"><i class="fas fa-map-marker-alt" id="loc"></i></span>
+                    <img src="img/img9.jpg" class="product-thumb" alt="">
+                    <button class="card-btn" onclick="msg()">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Old Medina</h2>
+                    <p class="product-short-description">Fès, Maroc</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag"><i class="fas fa-map-marker-alt" id="loc"></i></span>
+                    <img src="img/img10.jpg" class="product-thumb" alt="">
+                    <button class="card-btn" onclick="msg()">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Tower</h2>
+                    <p class="product-short-description">Rabat, Maroc.</p>
+                </div>
+            </div>
+        </div>
+        <button class="pre-btn"><i class="fas fa-chevron-right" id="ic"></i></button>
+        <button class="nxt-btn"><i class="fas fa-chevron-right" id="ic"></i></button>
+        
+    </section>
+<!--==================== experience ====================-->
+
+    <section class="experience section">
+      <h2 class="section__title">With Our Experience <br> We Will Serve You</h2>
+    
+      <div class="experience__container container grid">
+          <div class="experience__content grid">
+              <div class="experience__data">
+                  <h2 class="experience__number">20</h2>
+                  <span class="experience__description">Year <br> Experience</span>
+              </div>
+    
+              <div class="experience__data">
+                  <h2 class="experience__number">75</h2>
+                  <span class="experience__description">Complete <br> tours</span>
+              </div>
+    
+              <div class="experience__data">
+                  <h2 class="experience__number">650+</h2>
+                  <span class="experience__description">Tourist <br> Destination</span>
+              </div>
+          </div>
+    
+          <div class="experience__img grid">
+              <div class="experience__overlay">
+                  <img src="img/experience1.jpg" alt="" class="experience__img-one">
+              </div>
+              
+              <div class="experience__overlay">
+                  <img src="img/experience2.jpg" alt="" class="experience__img-two">
+              </div>
+          </div>
+      </div>
+    </section>
+<!--==================== Modals ====================-->
+
+<section class="sh">
+  
+    <!-- <div class="modal" id="modal">
+      <div class="modal-header">
+        <h1>Tanger, Maroc</h1>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="ttl"></div>
+      <div class="modal-body">
+        Tanger est une ville du nord du Maroc, considérée comme 
+        la capitale marocaine du détroit de Gibraltar et la porte
+        d'entrée du continent africain. C'est une grande ville de
+        près de 800 000 habitants et elle est en phase de modernisation 
+        pour s'adapter à la transformation vécue le pays,
+        améliorant ainsi ses infrastructures et ses services, 
+        aussi bien pour sa population que pour les touristes.
+      </div>
+        <button class="butt">Reservation</button>
+    </div> -->
+    <div id="overlay"></div>
+
+        
+      <div class="login-popup">
+          <div class="box">
+              <div class="img-area">
+                  <div class="img"></div>
+              </div>
+              <div class="form">
+                  <div class="close" >&times;</div>
+                  <div class="cnnt">
+                    <h1>Comment utiliser POPTRIP</h1>
+                    <p>-Vous pouvez vous inscrire sur le site en cliquant sur le bouton <strong>Login</strong> . <br>
+                       -Vous pouvez créer un compte en vous inscrivant directement sur le site ou en vous inscrivant avec un compte <strong>Facebook</strong>  ou <strong>Google</strong> . <br>
+                       -lorsque vous appuyez sur le bouton <strong>Explorer</strong> , vous pouvez voir les endroits les plus populaires au Maroc. <br>
+                       -lorsque vous appuyez sur le bouton <strong>Places</strong> , la section sur l'achat de billets de voyage s'affiche. <br>
+                       -Lorsque vous appuyez sur le bouton <strong>Discover</strong> , une vidéo sur les curiosités du Maroc apparaîtra. <br>
+                       -si vous n'avez pas compris quelque chose, contactez-nous via la section <strong>contact</strong> . </p>
+                  </div>
+                  
+              </div>
+              
+          </div>
+        </div>
+
+        <div class="lgnModal">
+          <div class="box1">
+            <h1 class="Modaltitle">POPTRIP</h1>
+            <div class="close1" >&times;</div>
+            <form action="pop.html" class="form">
+              <h2 class="tl">Login</h2>
+             <label for="Email">Email :</label>
+             <input class="p" type="email" id="Email" required>
+             <br>
+             <label for="PW">PassWord :</label>
+             <input class="p" type="password"  id="PW" required>
+             <input class="p1" type="submit" value="Login">
+             <div id="sn"><label for="">Add account</label><a class="nxt" href="#.">Sin Up</a></div>
+             <div class="or">-OR-</div>
+             <a class="ic"><i class="fab fa-facebook"><span>Login with Facebook</span></i></a>
+             <a class="ic1"><i class="fab fa-google"><span>Login with Google</span></i></a>
+             </form>
+
+            <form class="form1">
+              <h2 class="tl">Sin Up</h2>
+        <label for="Email_">Email :</label>
+        <input required class="p" type="email" id="Email_" >
+        <br>
+        <label for="PW_">PassWord :</label>
+        <input required class="p" type="password"  id="PW_" >
+        <br>
+        <label for="cPW">Conferm PassWord :</label>
+        <input required class="p" type="password"  id="cPW" >
+        <input class="p2" type="submit" value="Sign up">
+        <div id="sn"><label for="">Already have one</label><a class="prs" href="#.">Login</a></div>
+        <div class="or">-OR-</div>
+        <a class="ic"><i class="fab fa-facebook"><span>Login with Facebook</span></i></a>
+        <a class="ic1"><i class="fab fa-google"><span>Login with Google</span></i></a>
+            </form>
+          </div>
+          <p class="Mfooter">© 2021 - 2022 POPTRIP. All rights reserved. Cookie policy, Privacy and Terms.</p>
+              </div>
+        
+      <!-- <div class="paymentpopup">
+          <div class="box_">
+              <div class="headr_">
+                <h1>Payment</h1>
+                <div class="close_">&times;</div>
+              </div>
+              <form class="main_">
+                <p>Payment method :</p>
+                <div class="checkB_">
+                  <input type="radio" name="s" class="hddn" id="MasterCard"><label for="MasterCard"><img src="img/MasterCard_Logo.svg.png" alt=""></label>
+                  <input type="radio" name="s" class="hddn" id="Visa"><label for="Visa"><img src="img/Visa_Inc._logo.svg.png" alt=""></label>
+                  <input type="radio" name="s" class="hddn" id="Paypal"><label for="Paypal"><img src="img/2560px-PayPal_logo.svg.png" alt=""></label>
+                </div>
+                <p for="">Cardholder name :</p>
+                <div class="info1">
+                  <input type="text" placeholder=" Name">
+                  <select>
+                    <option hidden selected>day</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                  </select>
+                  <select>
+                    <option hidden selected>month</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                </div>
+              </form>
+          </div>
+        </div> -->
+        
+</section>
+<!--==================== video ====================-->
+
+<section class="video_tour" id="vd">
+  <h1 >Video Tour</h1> 
+  <div class="span">Find out more with our video of the most beautiful and pleasant places on Morocco for you and your Friends.</div>
+    <div class="vdo">
+        <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+          <source src="video/Morocco 8K HDR 60FPS (FUHD).mp4" type="video/mp4" />
+        </video>
+      
+        <script src="https://cdn.plyr.io/3.6.3/plyr.polyfilled.js"></script>
+    </div>
+
+</section>
+
+<!--==================== PLACES ====================-->
+
+<section class="place section" id="places">
+  <h2 class="section__title">Choose Your Place</h2>
+
+  <div class="place__container container grid">
+      <!--==================== PLACES CARD 1 ====================-->
+      <div class="place__card">
+          <img src="img/img1.jpg" alt="" class="place__img">
+          
+          <div class="place__content">
+              <span class="place__rating">
+                  <i class="ri-star-line place__rating-icon"></i>
+                  <span class="place__rating-number">4,8</span>
+              </span>
+
+              <div class="place__data">
+                  <h3 class="place__title">Merzouga</h3>
+                  <span class="place__subtitle">Maroc</span>
+                  <span class="place__price">$2499</span>
+              </div>
+          </div>
+
+          <button onclick="Login()" id="btn0" class="button button--flex place__button">
+              <i class="ri-arrow-right-line"></i>
+          </button>
+      </div>
+
+      <!--==================== PLACES CARD 2 ====================-->
+      <div class="place__card">
+          <img src="img/img2.jpg" alt="" class="place__img">
+          
+          <div class="place__content">
+              <span class="place__rating">
+                  <i class="ri-star-line place__rating-icon"></i>
+                  <span class="place__rating-number">5,0</span>
+              </span>
+
+              <div class="place__data">
+                  <h3 class="place__title">Merrakech</h3>
+                  <span class="place__subtitle">Maroc</span>
+                  <span class="place__price">$1599</span>
+              </div>
+          </div>
+
+          <button id="btn0" onclick="Login()" class="button button--flex place__button">
+              <i class="ri-arrow-right-line"></i>
+          </button>
+      </div>
+
+      <!--==================== PLACES CARD 3 ====================-->
+      <div class="place__card">
+          <img src="img/img4.jpg" alt="" class="place__img">
+          
+          <div class="place__content">
+              <span class="place__rating">
+                  <i class="ri-star-line place__rating-icon"></i>
+                  <span class="place__rating-number">4,9</span>
+              </span>
+
+              <div class="place__data">
+                  <h3 class="place__title">Tange</h3>
+                  <span class="place__subtitle">Maroc</span>
+                  <span class="place__price">$3499</span>
+              </div>
+          </div>
+
+          <button id="btn0" onclick="Login()" class="button button--flex place__button">
+              <i class="ri-arrow-right-line"></i>
+          </button>
+      </div>
+
+      <!--==================== PLACES CARD 4 ====================-->
+      <div class="place__card">
+          <img src="img/img6 (2).jpg" alt="" class="place__img">
+          
+          <div class="place__content">
+              <span class="place__rating">
+                  <i class="ri-star-line place__rating-icon"></i>
+                  <span class="place__rating-number">4,8</span>
+              </span>
+
+              <div class="place__data">
+                  <h3 class="place__title">Al Hoceïma</h3>
+                  <span class="place__subtitle">Maroc</span>
+                  <span class="place__price">$2499</span>
+              </div>
+          </div>
+
+          <button id="btn0" onclick="Login()" class="button button--flex place__button">
+              <i class="ri-arrow-right-line"></i>
+          </button>
+      </div>
+
+      <!--==================== PLACES CARD 5 ====================-->
+      <div class="place__card">
+          <img src="img/img8.jpg" alt="" class="place__img">
+          
+          <div class="place__content">
+              <span class="place__rating">
+                  <i class="ri-star-line place__rating-icon"></i>
+                  <span class="place__rating-number">4,8</span>
+              </span>
+
+              <div class="place__data">
+                  <h3 class="place__title">Casablanca</h3>
+                  <span class="place__subtitle">Maroc</span>
+                  <span class="place__price">$1999</span>
+              </div>
+          </div>
+
+          <button id="btn0" onclick="Login()" class="button button--flex place__button">
+              <i class="ri-arrow-right-line"></i>
+          </button>
+      </div>
+  </div>
+</section>
+<!--==================== Contact ====================-->
+<section class="Contact" id="Contact">
+    <h2 class="titel_"> Let's Work Together</h2>
+    <div class="content_">
+        <div class="card_">
+            <div style="margin: 0 60px;" class="icon_">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="info_">
+                <h3>Phone</h3>
+                <p>+212 674976802</p>
+            </div>
+        </div> 
+        <div class="card_">
+            <div class="icon_">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info_">
+                <h3>Email</h3>
+                <p>yben0600@gmail.com</p>
+            </div>
+        </div> 
+    </div>
+</section>
+<!--==================== Footer ====================-->
+
+<footer>
+    <p>Copyright @ <span> yahya benlafkih</span></p>
+    <div class="social_icons">
+        <a href="https://www.facebook.com/kaniky.sycko" target="https://www.facebook.com/kaniky.sycko"><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/benlafkih" target="https://github.com/benlafkih"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/yahya-benlafkih-2929b3212" target="https://www.linkedin.com/in/yahya-benlafkih-2929b3212"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/yahya_q0p/" target="https://www.instagram.com/yahya_q0p/"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+
+<a href="#" class="to-top"><i class="fas fa-chevron-up"></i></a>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/pop.js"></script>
+
+</body>
+</html>

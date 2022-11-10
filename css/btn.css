@@ -1,0 +1,244 @@
+/* From cssbuttons.io by @nikk7007 */
+.btnC {
+    padding: 0.5em 2.5em;
+    border: 2px solid #fff;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #fff;
+    margin-left: 1px;
+    cursor: pointer;
+   }
+   
+   .btnC::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(35deg);
+    background: #fff;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   .sticky .btnC::before{
+       background:#14505c;
+   }
+   .btnC:hover::before {
+    width: 105%;
+   }
+   
+   .btnC:hover {
+    color: #14505c;
+    border: 2px solid #fff;
+   }
+   .sticky .btnC:hover{
+       border-color: #14505c;
+       color: #fff;
+   }
+   /*---------------------------------------------------------------------------------------*/
+   
+/* From cssbuttons.io */
+#btn {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .7em 3.2em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: #fff;
+    background-color: #14505c;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+   }
+   
+   #btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   }
+   
+   #btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   }
+   
+   #btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+   
+   #btn::after {
+    background-color: #fff;
+   }
+   
+   #btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+   }
+.butt {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+    background-color: #fff;
+    color: #575757;
+    font-size: 1.3em;
+    font-weight: 300;
+    border: 2px solid #353535;
+    padding: 6px;
+    cursor: pointer;
+    transition:all 0.1s ease;
+}
+.butt:hover{
+    transform: scale(1.6);
+    box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.to-top {
+    background: #14505c;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:40px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:28px;
+    border-radius: 4px;
+    color:#fff;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+    }
+    
+    .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+    }
+
+.sin{
+    bottom: 30px;
+    right: 26%;
+    position: absolute;
+    font-size: 1em;
+    border: 2px solid #14505c;
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    color: #14505c;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.sin1{
+    bottom: 30px;
+    right: 4%;
+    position: absolute;
+    font-size: 1em;
+    border: 2px solid #14505c;
+    background-color: #14505c;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.sin:hover , .p1:hover,.p2:hover{
+    background-color: #14505c;
+    color: #fff;
+}
+.sin1:hover{
+    background-color: transparent;
+    color: #d66203;
+}
+.p1,.p2{
+    font-size: 1em;
+    border: 1px solid #14505c;
+    background-color: transparent;
+    border-radius: 20px;
+    color: #14505c;
+    font-weight: 500;
+    margin-top: 30px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+
+
+
+
+
+@media screen and (max-width: 980px){
+    .btnC:hover {
+        color: #14505c;
+        border: 2px solid #fff;
+    }
+    .btnC::before {
+        background: #fff;
+    }
+    .btnC {
+        padding: 0.5em 1.8em;
+        border-radius: 0;
+        border: 2px solid #fff;
+        position: relative;
+        overflow: hidden;
+        background-color: transparent;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        transition: .3s;
+        z-index: 1;
+        font-family: inherit;
+        color: #fff;
+        margin-left: 0;
+    }
+    .sticky .btnC{
+        color: #14505c;
+        border: 2px solid #14505c;
+    }
+    .sticky .btnC:hover {
+        color: #fff;
+        border: 2px solid #14505c;
+    }
+    .sticky .btnC::before {
+        background: #14505c;
+    }
+    #btn {
+        padding: .9em 3.5em;
+    }
+    .butt button{
+        bottom: 22px;
+        right: 100px;
+    }
+    
+}
